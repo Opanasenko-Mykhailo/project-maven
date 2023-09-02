@@ -103,8 +103,11 @@
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
                             <mainClass>org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader</mainClass>
-                            <packageName>com.javarush.games.racer</packageName>
                         </manifest>
+                        <manifestEntries>
+                            <Rsrc-Main-Class>com.javarush.games.racer.RacerGame</Rsrc-Main-Class>
+                            <Class-Path>./</Class-Path>
+                        </manifestEntries>
                     </archive>
                 </configuration>
             </plugin>
@@ -116,7 +119,7 @@
                 <version>3.1.2</version>
                 <configuration>
                     <excludes>
-                        <exclude>**/StrangeTest.java</exclude>
+                        <exclude>StrangeTest</exclude>
                     </excludes>
                 </configuration>
             </plugin>
